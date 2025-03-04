@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelFor", "ParallelFor\ParallelFor.csproj", "{495CE00E-157F-408F-8F00-E4D1E2B98DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelForEachBreak", "ParallelForEachBreak\ParallelForEachBreak.csproj", "{CE3C59D7-2883-4151-9E8F-B311F8C62CCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{495CE00E-157F-408F-8F00-E4D1E2B98DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495CE00E-157F-408F-8F00-E4D1E2B98DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495CE00E-157F-408F-8F00-E4D1E2B98DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495CE00E-157F-408F-8F00-E4D1E2B98DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3C59D7-2883-4151-9E8F-B311F8C62CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3C59D7-2883-4151-9E8F-B311F8C62CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3C59D7-2883-4151-9E8F-B311F8C62CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3C59D7-2883-4151-9E8F-B311F8C62CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBE6CFF6-D537-47F2-9E20-48F75FDD850C}
+	EndGlobalSection
+EndGlobal
