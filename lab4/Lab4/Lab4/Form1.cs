@@ -69,7 +69,7 @@ namespace Lab4
 
                 }, token);      //Pass the CancellationToken
 
-                // If the task completes, show the final result
+                //If the task completes, show the final result
                 if (result > 100)
                 {
                     label1.Text = $"Calculation Complete!\n" +
