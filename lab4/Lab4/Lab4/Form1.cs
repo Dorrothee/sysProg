@@ -47,10 +47,12 @@ namespace Lab4
 
                     for (int i = 1; i <= 100; i++) //Loop from 1 to 100 (scale for 100%)
                     {
-                        token.ThrowIfCancellationRequested(); // Throw exception if canceled
+                        //Check for cancellation
+                        if (token.IsCancellationRequested)
+                            return i;   //Return progress value when canceled
 
                         //Simulate work (delay for computation)
-                        await Task.Delay(50, token);
+                        await Task.Delay(50);
 
                         //Update the percentage progress and partial sum on the UI thread
                         this.Invoke((Action)(() =>
@@ -64,23 +66,25 @@ namespace Lab4
                     }
 
                     return sum; //Return the final sum
+
                 }, token);      //Pass the CancellationToken
 
-                //Update the label with the final result
-                label1.Text = $"Calculation Complete!\n" +
-                                $"Result: {result}";
-            }
-            catch (OperationCanceledException)
-            {
-                //Handle cancellation
-                int canceledAt = progressBar1.Value;    //Capture the current progress
-                label1.Text = $"Task Canceled at {canceledAt}%!";
+                // If the task completes, show the final result
+                if (result > 100)
+                {
+                    label1.Text = $"Calculation Complete!\n" +
+                                    $"Result: {result}";
+                }
+                else
+                {
+                    label1.Text = $"Task Canceled at {result}%!";
+                }
             }
             finally
             {
-                // Reset UI elements
-                button1.Enabled = true;  //Re-enable "Start" button
-                button2.Enabled = false; //Disable "Cancel" button
+                //Reset UI elements
+                button1.Enabled = true;     //Re-enable "Start" button
+                button2.Enabled = false;    //Disable "Cancel" button
 
                 //Dispose of the CancellationTokenSource
                 _cts.Dispose();
