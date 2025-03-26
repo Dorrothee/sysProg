@@ -28,6 +28,16 @@ namespace Lab4
 
         private async void button1_Click(object sender, EventArgs e)
         {
+            startButtonAsync();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Trigger cancellation if CancellationTokenSource exists
+            _cts?.Cancel();
+        }
+
+        private async Task startButtonAsync() {
             //Initialize a new CancellationTokenSource
             _cts = new CancellationTokenSource();
             CancellationToken token = _cts.Token;
@@ -89,12 +99,6 @@ namespace Lab4
                 //Dispose of the CancellationTokenSource
                 _cts.Dispose();
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //Trigger cancellation if CancellationTokenSource exists
-            _cts?.Cancel();
         }
     }
 }
