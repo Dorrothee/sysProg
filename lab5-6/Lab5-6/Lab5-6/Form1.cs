@@ -110,6 +110,11 @@ namespace Lab5_6
         {
 
         }
+
+        private void treeView_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
     }
 
     public class Student

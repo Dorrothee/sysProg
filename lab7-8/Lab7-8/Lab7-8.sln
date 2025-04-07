@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_1", "Task_1\Task_1.csproj", "{68DE35C9-9793-481F-A819-5E10C413100E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_2", "Task_2\Task_2.csproj", "{6F2E71DE-9A3B-4C40-A0C7-810204FFD86E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_3", "Task_3\Task_3.csproj", "{4E9E550D-02AD-417C-885B-A1E4E1B30840}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68DE35C9-9793-481F-A819-5E10C413100E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DE35C9-9793-481F-A819-5E10C413100E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68DE35C9-9793-481F-A819-5E10C413100E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68DE35C9-9793-481F-A819-5E10C413100E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2E71DE-9A3B-4C40-A0C7-810204FFD86E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2E71DE-9A3B-4C40-A0C7-810204FFD86E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2E71DE-9A3B-4C40-A0C7-810204FFD86E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2E71DE-9A3B-4C40-A0C7-810204FFD86E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E9E550D-02AD-417C-885B-A1E4E1B30840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E9E550D-02AD-417C-885B-A1E4E1B30840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E9E550D-02AD-417C-885B-A1E4E1B30840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E9E550D-02AD-417C-885B-A1E4E1B30840}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A239FC6-05B1-4BBE-B6F9-FB87D5AAAFC2}
+	EndGlobalSection
+EndGlobal

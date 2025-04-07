@@ -1,4 +1,4 @@
-﻿namespace Lab5_6
+﻿namespace Task_1
 {
     partial class Form1
     {
@@ -28,27 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView = new System.Windows.Forms.TreeView();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
-            // treeView
+            // treeView1
             // 
-            this.treeView.BackColor = System.Drawing.Color.Lavender;
-            this.treeView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.treeView.LineColor = System.Drawing.Color.Purple;
-            this.treeView.Location = new System.Drawing.Point(0, 0);
-            this.treeView.Name = "treeView";
-            this.treeView.Size = new System.Drawing.Size(800, 450);
-            this.treeView.TabIndex = 0;
-            this.treeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView_AfterSelect);
+            this.treeView1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(800, 450);
+            this.treeView1.TabIndex = 0;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.treeView);
+            this.Controls.Add(this.treeView1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -58,7 +57,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
 
